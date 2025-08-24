@@ -33,27 +33,27 @@ const Services: React.FC = () => {
       icon: <Shield size={32} />,
     },
     {
-      title: 'Estruturas Metálicas',
+      title: 'Estruturas de Alumínio',
       description:
-        'Estruturas metálicas para coberturas, mezaninos, escadas, galpões e outras aplicações industriais e residenciais.',
+        'Estruturas de alumínio e vidros para coberturas, mezaninos, escadas, galpões e outras aplicações industriais e residenciais.',
       icon: <Building size={32} />,
     },
     {
       title: 'Serralheria Residencial',
       description:
-        'Soluções personalizadas em metal para residências, incluindo corrimãos, guarda-corpos, janelas e portas.',
+        'Soluções personalizadas em alumínio e vidros para residências, incluindo corrimãos, guarda-corpos, janelas e portas.',
       icon: <Home size={32} />,
     },
     {
       title: 'Manutenção e Reparos',
       description:
-        'Serviços de manutenção e reparo em estruturas metálicas, portões, grades e outras instalações de serralheria.',
+        'Serviços de manutenção e reparo em estruturas de alumínios, portões, grades e outras instalações de serralheria.',
       icon: <Tool size={32} />,
     },
     {
       title: 'Projetos Industriais',
       description:
-        'Desenvolvimento e execução de projetos industriais em metal, atendendo às especificações técnicas e de segurança.',
+        'Desenvolvimento e execução de projetos industriais em alumínio em vidro, atendendo às especificações técnicas e de segurança.',
       icon: <Cog size={32} />,
     },
     {
