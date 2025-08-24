@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import aluminioImg from '../img/aluminio.jpeg'; // ajuste o caminho conforme a pasta real
+import aluminioImg from '../img/aluminio.jpg'; // ajuste o caminho conforme a pasta real
 
 const Hero: React.FC = () => {
   return (
@@ -21,7 +21,8 @@ const Hero: React.FC = () => {
 
           </h1>
           <p className="text-xl mb-8 text-gray-200" data-aos="fade-up" data-aos-delay="200">
-            Soluções personalizadas em serralheria para sua casa ou empresa. 
+            Soluções personalizadas em serralheria para sua casa ou empresa.
+            <br /> 
             Portões, portas, janelas, gradil, blindex, caixas de ar condicionado e muito mais com qualidade e excelência.
           </p>
           <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="400">
