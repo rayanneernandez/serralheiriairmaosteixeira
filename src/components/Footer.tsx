@@ -14,14 +14,21 @@ const Footer: React.FC = () => {
               Soluções em serralheria com qualidade, compromisso e excelência para projetos residenciais e comerciais.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-slate-800 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+              <a 
+                href="https://www.facebook.com/irmaos.teixeira.7587/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-slate-800 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="#" className="bg-slate-800 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+              <a 
+                href="https://www.instagram.com/serralheriairmaosteixeira?igsh=NjgxcTZmdGpzbGVp" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-slate-800 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"
+              >
                 <Instagram size={20} />
-              </a>
-              <a href="#" className="bg-slate-800 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
-                <Linkedin size={20} />
               </a>
             </div>
           </div>
@@ -69,11 +76,13 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Phone size={18} className="text-blue-600 mr-3 flex-shrink-0 mt-1" />
-                <span className="text-gray-400">(21) 99999-9999</span>
+                <span className="text-gray-400">(21) 98761-5163 / </span> 
+                <span className="text-gray-400">(21) 98630-1941</span>
+
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start"> 
                 <Mail size={18} className="text-blue-600 mr-3 flex-shrink-0 mt-1" />
-                <span className="text-gray-400">contato@ferroarte.com.br</span>
+                <span className="text-gray-400">serralheriairmaosteixeira@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <div className="text-blue-600 mr-3 flex-shrink-0 mt-1">
@@ -81,7 +90,7 @@ const Footer: React.FC = () => {
                     <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 16.25A3.75 3.75 0 1 1 15.75 15 3.75 3.75 0 0 1 12 18.25z"></path>
                   </svg>
                 </div>
-                <span className="text-gray-400">Av. Brasil, 1500 - Rio de Janeiro, RJ</span>
+                <span className="text-gray-400">Pilares - Rio de Janeiro, RJ</span>
               </li>
             </ul>
           </div>
@@ -91,7 +100,7 @@ const Footer: React.FC = () => {
       <div className="border-t border-slate-800 py-6">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} FerroArte Serralheria. Todos os direitos reservados.
+            © {new Date().getFullYear()} Irmãos Teixeira Serralheria. Todos os direitos reservados.
           </p>
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6">

@@ -1,13 +1,19 @@
 import React, { useState } from "react";
-import portasImg from "../img/portas.png";
+import portasImg from "../img/portas.png";  
+import portaImg from "../img/porta.jpeg";
 import portafrenteImg from "../img/portafrente.png";
 import portabanheiroImg from "../img/portabanheiro.png";
 import portacormadeiraImg from "../img/portacormadeira.png";
 import armariopiaImg from "../img/armariopia.png";
+import armariopia2Img from "../img/armariopia2.jpeg";
 import aluminiobrancoImg from "../img/aluminiobranco.png";
 import vidrosvarandaImg from "../img/vidrosvaranda.png";
 import caixaImg from "../img/caixa.jpg";
+import janelaImg from "../img/janela.jpeg";
 import janelamercadoImg from "../img/janelamercado.png";
+import escadaImg from "../img/escada.jpeg";
+import escada2Img from "../img/escada2.jpeg";
+import portaoImg from "../img/portao.jpeg";
 
 interface Project {
   id: number;
@@ -21,59 +27,98 @@ const Gallery: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState("todos");
 
   const projects: Project[] = [
+
     {
       id: 1,
-      category: "portas",
-      image: portasImg,
-      description: "Porta de giro",
+      category: "escada",
+      image: escadaImg,
+      description: "Escada Residencial",
     },
     {
       id: 2,
-      category: "portas",
+      category: "escada",
+      image: escada2Img,
+      description: "Escada Residencial",
+    },
+      {
+      id: 3,
+      category: "portões",
+      image: portaoImg,
+      description: "Portão",
+    },
+    {
+      id: 4,
+      category: "portões",
+      image: portaImg,
+      description: "Portão de Madeira",
+    },
+       {
+      id: 5,
+      category: "Janela",
+      image: janelaImg,
+      description: "Janela de Aluminio",
+    },
+
+    {
+      id: 6,
+      category: "porta banheiro",
       image: portabanheiroImg,
       description: "Porta de banheiro",
     },
+ 
     {
-      id: 3,
+      id: 7,
       category: "portões",
       image: portafrenteImg,
       description: "Portão de giro, lambril duplo",
     },
     {
-      id: 4,
+      id: 8,
       category: "portas",
       image: portacormadeiraImg,
       description: "Porta cor madeira",
     },
     {
-      id: 5,
+      id: 9,
       category: "armário",
       image: armariopiaImg,
       description: "Armário de Pia",
     },
+        {
+      id: 10,
+      category: "armário",
+      image: armariopia2Img,
+      description: "Armário de Pia",
+    },
     {
-      id: 6,
+      id: 11,
       category: "portas",
       image: aluminiobrancoImg,
       description: "Alumínio branco, brilho e bronze",
     },
     {
-      id: 7,
+      id: 12,
       category: "vidros",
       image: vidrosvarandaImg,
       description: "Vidros de varandas",
     },
     {
-      id: 8,
+      id: 13,
       category: "caixa",
       image: caixaImg,
       description: "Caixa para receber encomendas",
     },
     {
-      id: 9,
+      id: 14,
       category: "comercial",
       image: janelamercadoImg,
       description: "Janela de mercado",
+    },
+    {
+      id: 15,
+      category: "portas",
+      image: portasImg,
+      description: "Porta de giro",
     },
   ];
 
