@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import escadaImg from '../img/escada.jpeg'; // ajuste o caminho conforme a pasta real
+import escadaImg from '../img/escada.jpeg';
 
 const Hero: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
         style={{ 
-          backgroundImage: `url(${escadaImg})`, // usando a importação
+          backgroundImage: `url(${escadaImg})`, 
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70"></div>

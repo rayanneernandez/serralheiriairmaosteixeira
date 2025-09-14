@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Home, Building, PenTool as Tool, Cog, Truck } from 'lucide-react';
+import { Shield, Home, Building, PenTool as Tool, Cog, Truck, PanelsTopLeft } from 'lucide-react';
 
 interface ServiceCardProps {
   title: string;
@@ -35,13 +35,13 @@ const Services: React.FC = () => {
     {
       title: 'Estruturas de Alumínio',
       description:
-        'Estruturas de alumínio e vidros para coberturas, mezaninos, escadas, galpões e outras aplicações industriais e residenciais.',
+        'Estruturas de alumínio e vidros para coberturas, escadas, galpões e outras aplicações industriais e residenciais.',
       icon: <Building size={32} />,
     },
     {
       title: 'Serralheria Residencial',
       description:
-        'Soluções personalizadas em alumínio e vidros para residências, incluindo corrimãos, guarda-corpos, janelas e portas.',
+        'Soluções personalizadas em alumínio e vidros para residências, incluindo corrimãos, janelas e portas.',
       icon: <Home size={32} />,
     },
     {
@@ -62,6 +62,13 @@ const Services: React.FC = () => {
         'Serviços de instalação profissional e transporte seguro para todas as nossas soluções em serralheria.',
       icon: <Truck size={32} />,
     },
+
+    {
+      title: 'Vidros / Blindex',
+      description: 'Tudo em vidros laminados, temperados e Box blindex, com qualidade e segurança garantidas.',
+      icon: <PanelsTopLeft size={32} />,
+    },
+
   ];
 
   return (

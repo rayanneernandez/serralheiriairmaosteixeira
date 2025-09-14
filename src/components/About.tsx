@@ -36,8 +36,7 @@ const About: React.FC = () => {
               Nossa trajetória é marcada pelo compromisso com a excelência e a satisfação dos clientes.
             </p>
             <p className="text-gray-600 mb-6">
-              Contamos com uma equipe de profissionais altamente qualificados, equipamentos modernos e matéria-prima de 
-              primeira linha, garantindo resultados superiores em cada projeto que executamos.
+              Contamos com uma equipe de profissionais altamente qualificados e equipamentos modernos e matéria-prima de primeira linha, garantindo resultados superiores em cada projeto que executamos.
             </p>
             <div className="mb-8">
               <h3 className="text-xl font-bold text-slate-800 mb-4">Nossos Valores</h3>

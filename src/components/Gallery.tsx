@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import portasImg from "../img/portas.png";  
+import portagiroImg from "../img/portagiro.jpeg";  
 import portaImg from "../img/porta.jpeg";
 import portafrenteImg from "../img/portafrente.png";
 import portabanheiroImg from "../img/portabanheiro.png";
@@ -14,10 +14,11 @@ import janelamercadoImg from "../img/janelamercado.png";
 import escadaImg from "../img/escada.jpeg";
 import escada2Img from "../img/escada2.jpeg";
 import portaoImg from "../img/portao.jpeg";
+import variosvidrosImg from "../img/variosvidros.jpeg";
 
 interface Project {
   id: number;
-  category: string;
+  category: string | string[]; // Agora aceita string ou array de strings
   image: string;
   description?: string;
 }
@@ -27,115 +28,119 @@ const Gallery: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState("todos");
 
   const projects: Project[] = [
-
     {
       id: 1,
-      category: "escada",
+      category: "Aluminio",
       image: escadaImg,
-      description: "Escada Residencial",
+      description: "Estrutura em aluminio fachada cortina",
     },
     {
       id: 2,
-      category: "escada",
+      category: "Aluminio",
       image: escada2Img,
-      description: "Escada Residencial",
+      description: "Estrutura em aluminio fachada cortina",
     },
-      {
+    {
       id: 3,
-      category: "portões",
+      category: "Aluminio",
       image: portaoImg,
-      description: "Portão",
+      description: "Portão de aluminio branco",
     },
     {
       id: 4,
-      category: "portões",
+      category: "Aluminio",
       image: portaImg,
-      description: "Portão de Madeira",
+      description: "Pintura amadeirado",
     },
-       {
+    {
       id: 5,
-      category: "Janela",
+      category: "Aluminio",
       image: janelaImg,
       description: "Janela de Aluminio",
     },
-
     {
       id: 6,
-      category: "porta banheiro",
+      category: "Blindex",
       image: portabanheiroImg,
-      description: "Porta de banheiro",
+      description: "Box blindex",
     },
- 
     {
       id: 7,
-      category: "portões",
+      category: "Aluminio",
       image: portafrenteImg,
       description: "Portão de giro, lambril duplo",
     },
     {
       id: 8,
-      category: "portas",
+      category: "Aluminio",
       image: portacormadeiraImg,
-      description: "Porta cor madeira",
+      description: "Pintura amadeirado",
     },
     {
       id: 9,
-      category: "armário",
+      category: "Aluminio", 
       image: armariopiaImg,
-      description: "Armário de Pia",
+      description: "Armário de Pia - Aluminio",
     },
-        {
+    {
       id: 10,
-      category: "armário",
+      category: "Aluminio",
       image: armariopia2Img,
-      description: "Armário de Pia",
+      description: "Armário de Pia - Aluminio",
     },
     {
       id: 11,
-      category: "portas",
+      category: "Aluminio",
       image: aluminiobrancoImg,
       description: "Alumínio branco, brilho e bronze",
     },
     {
       id: 12,
-      category: "vidros",
+      category: "Vidro",
       image: vidrosvarandaImg,
-      description: "Vidros de varandas",
+      description: "Vidros temperados varanda",
     },
     {
       id: 13,
-      category: "caixa",
+      category: ["Aluminio", "Vidro"], // exemplo de múltiplas categorias
       image: caixaImg,
-      description: "Caixa para receber encomendas",
+      description: "Caixa para receber encomendas - Aluminio e Vidro",
     },
     {
       id: 14,
-      category: "comercial",
+      category: "Aluminio",
       image: janelamercadoImg,
-      description: "Janela de mercado",
+      description: "Estrutura de Aluminio - Janela de mercado",
     },
     {
       id: 15,
-      category: "portas",
-      image: portasImg,
-      description: "Porta de giro",
+      category: "Aluminio",
+      image: portagiroImg,
+      description: "Porta de giro de lambril - Aluminio",
+    },
+    {
+      id: 16,
+      category: "Vidro",
+      image: variosvidrosImg,
+      description: "Vidros temperados",
     },
   ];
 
   const categories = [
     "todos",
-    "portas",
-    "portões",
-    "armário",
-    "vidros",
-    "caixa",
-    "comercial",
+    "Aluminio",
+    "Vidro",
+    "Blindex",
   ];
 
   const filteredProjects =
     activeCategory === "todos"
       ? projects
-      : projects.filter((p) => p.category === activeCategory);
+      : projects.filter((p) =>
+          Array.isArray(p.category)
+            ? p.category.includes(activeCategory)
+            : p.category === activeCategory
+        );
 
   return (
     <section id="projetos" className="py-16 bg-white">
@@ -158,7 +163,7 @@ const Gallery: React.FC = () => {
                   : "bg-gray-200 text-gray-800 hover:bg-gray-300"
               }`}
             >
-              {category.charAt(0).toUpperCase() + category.slice(1)}
+              {category}
             </button>
           ))}
         </div>

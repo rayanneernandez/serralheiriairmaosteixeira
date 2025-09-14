@@ -53,10 +53,10 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-bold mb-6">Nossos Serviços</h3>
             <ul className="space-y-3">
               {[
-                'Portões e Grades',
-                'Estruturas Metálicas',
+                'Portões de Aluminios',
+                'Estruturas de Aluminio',
                 'Serralheria Residencial',
-                'Manutenção e Reparos',
+                'Vidros Temperados',
                 'Projetos Industriais'
               ].map((service) => (
                 <li key={service}>
