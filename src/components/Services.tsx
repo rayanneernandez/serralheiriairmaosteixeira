@@ -45,12 +45,6 @@ const Services: React.FC = () => {
       icon: <Home size={32} />,
     },
     {
-      title: 'Manutenção e Reparos',
-      description:
-        'Serviços de manutenção e reparo em estruturas de alumínios, portões, grades e outras instalações de serralheria.',
-      icon: <Tool size={32} />,
-    },
-    {
       title: 'Projetos Industriais',
       description:
         'Desenvolvimento e execução de projetos industriais em alumínio em vidro, atendendo às especificações técnicas e de segurança.',

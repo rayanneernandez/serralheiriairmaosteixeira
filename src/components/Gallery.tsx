@@ -15,6 +15,10 @@ import escadaImg from "../img/escada.jpeg";
 import escada2Img from "../img/escada2.jpeg";
 import portaoImg from "../img/portao.jpeg";
 import variosvidrosImg from "../img/variosvidros.jpeg";
+import box1Img from "../img/box1.jpeg";
+import box2Img from "../img/box2.jpeg";
+import box3Img from "../img/box3.jpeg";
+import box4Img from "../img/box4.jpeg";
 
 interface Project {
   id: number;
@@ -70,59 +74,81 @@ const Gallery: React.FC = () => {
       image: portafrenteImg,
       description: "Portão de giro, lambril duplo",
     },
+
     {
       id: 8,
-      category: "Aluminio",
-      image: portacormadeiraImg,
-      description: "Pintura amadeirado",
-    },
-    {
-      id: 9,
       category: "Aluminio", 
       image: armariopiaImg,
       description: "Armário de Pia - Aluminio",
     },
     {
-      id: 10,
+      id: 9,
       category: "Aluminio",
       image: armariopia2Img,
       description: "Armário de Pia - Aluminio",
     },
     {
-      id: 11,
+      id: 10,
       category: "Aluminio",
       image: aluminiobrancoImg,
       description: "Alumínio branco, brilho e bronze",
     },
     {
-      id: 12,
+      id: 11,
       category: "Vidro",
       image: vidrosvarandaImg,
       description: "Vidros temperados varanda",
     },
     {
-      id: 13,
-      category: ["Aluminio", "Vidro"], // exemplo de múltiplas categorias
+      id: 12,
+      category: ["Aluminio", "Vidro"], 
       image: caixaImg,
       description: "Caixa para receber encomendas - Aluminio e Vidro",
     },
     {
-      id: 14,
+      id: 13,
       category: "Aluminio",
       image: janelamercadoImg,
       description: "Estrutura de Aluminio - Janela de mercado",
     },
     {
-      id: 15,
+      id: 14,
       category: "Aluminio",
       image: portagiroImg,
       description: "Porta de giro de lambril - Aluminio",
     },
     {
-      id: 16,
+      id: 15,
       category: "Vidro",
       image: variosvidrosImg,
       description: "Vidros temperados",
+    },
+    {
+      id: 16,
+      category: "Blindex",
+      image: box1Img,
+      description: "Box blindex",
+    },
+
+     {
+      id: 17,
+      category: "Blindex",
+      image: box2Img,
+      description: "Box blindex",
+    },
+
+     {
+      id: 18,
+      category: "Blindex",
+      image: box3Img,
+      description: "Box blindex",
+    },
+
+         {
+      id: 19,
+      category: "Blindex",
+      image: box4Img,
+      description: "Box blindex",
     },
   ];
 

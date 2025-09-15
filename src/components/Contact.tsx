@@ -1,14 +1,26 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Send } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Redireciona para WhatsApp no número principal com a mensagem personalizada
-    window.open(
-      'https://wa.me/552187615163?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20dos%20irmãos%20teixeira.',
-      '_blank'
-    );
+
+    const name = (document.getElementById("name") as HTMLInputElement).value;
+    const email = (document.getElementById("email") as HTMLInputElement).value;
+    const phone = (document.getElementById("phone") as HTMLInputElement).value;
+    const service = (document.getElementById("service") as HTMLSelectElement).value;
+    const message = (document.getElementById("message") as HTMLTextAreaElement).value;
+
+    // Monta a mensagem que vai para o WhatsApp
+    const text = `Olá, gostaria de solicitar um orçamento.\n\n` +
+      `*Nome:* ${name}\n` +
+      `*Email:* ${email}\n` +
+      `*Telefone:* ${phone}\n` +
+      `*Serviço:* ${service}\n` +
+      `*Mensagem:* ${message}`;
+
+    const url = `https://wa.me/552187615163?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
   };
 
   return (
@@ -124,12 +136,12 @@ const Contact: React.FC = () => {
                   required
                 >
                   <option value="">Selecione um serviço</option>
-                  <option value="portoes">Portões e Grades</option>
-                  <option value="estruturas">Estruturas Metálicas</option>
-                  <option value="residencial">Serralheria Residencial</option>
-                  <option value="manutencao">Manutenção e Reparos</option>
-                  <option value="projetos">Projetos Industriais</option>
-                  <option value="outros">Outros</option>
+                  <option value="Estruturas de Alumínio">Estruturas de Alumínio</option>
+                  <option value="Vidros Temperados">Vidros Temperados</option>
+                  <option value="Box Blindex">Box Blindex</option>
+                  <option value="Estruturas Personalizadas">Estruturas personalizadas</option>
+                  <option value="Projetos Industriais">Projetos Industriais</option>
+                  <option value="Outros">Outros</option>
                 </select>
               </div>
 
@@ -146,23 +158,10 @@ const Contact: React.FC = () => {
 
               <button 
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center"
-              >
-                Enviar Mensagem
-                <Send size={18} className="ml-2" />
-              </button>
-
-              <p className="text-sm text-gray-400 text-center mt-4">
-                Ou entre em contato diretamente via WhatsApp:
-              </p>
-              <a 
-                href="https://wa.me/552187615163?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20dos%20irmãos%20teixeira." 
-                target="_blank" 
-                rel="noopener noreferrer"
                 className="block w-full text-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300"
               >
                 Falar via WhatsApp
-              </a>
+              </button>
             </form>
           </div>
         </div>
