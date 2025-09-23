@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Award, Users, CheckCircle } from 'lucide-react';
+import { Award, Users, CheckCircle } from 'lucide-react';
 import equipeTrabalho from "../img/equipetrabalho.jpg";
 import fazendo from "../img/fazendo.png";
 import trabalho from "../img/trabalhando.png";   
