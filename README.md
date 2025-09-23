@@ -42,6 +42,3 @@ Ferramentas adicionais:
 
 
 
-
-# Inicie o servidor de desenvolvimento
-npm run dev
